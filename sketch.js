@@ -36,7 +36,7 @@ function windowResized() {
 
 function drawOverlayGraphics() {
   overlayGraphics.clear(); // 清除先前的內容
-  overlayGraphics.background(101, 67, 33); // 深棕色背景 (RGB 值)
+  overlayGraphics.background(0); // 黑色背景
 
   // 每隔 20 單位繪製圓
   for (let y = 0; y < overlayGraphics.height; y += 20) {
@@ -49,4 +49,3 @@ function drawOverlayGraphics() {
     }
   }
 }
-
