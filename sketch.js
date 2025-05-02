@@ -10,7 +10,9 @@ function setup() {
 
 function draw() {
   background(139, 69, 19); // 確保背景保持棕色
-  image(capture, (width - capture.width) / 2, (height - capture.height) / 2); // 將影像置中
+  translate(width / 2, height / 2); // 將原點移到畫布中心
+  scale(-1, 1); // 水平翻轉影像
+  image(capture, -capture.width / 2, -capture.height / 2); // 將影像置中
 }
 
 function windowResized() {
