@@ -37,3 +37,4 @@ function windowResized() {
   overlay = createGraphics(capture.width, capture.height); // 重新調整圖形大小
   overlay.background(255, 0, 0, 100); // 設定圖形背景為半透明紅色
 }
+
